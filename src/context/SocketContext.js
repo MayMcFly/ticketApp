@@ -11,7 +11,7 @@ export const SocketProvider = ({ children }) => {
     if(process.env.NODE_ENV === 'development'){
         urlSocket = 'http://localhost:3009';
     }else{
-        urlSocket = 'https://ticketclient.netlify.app/';
+        urlSocket = 'https://glacial-tor-72395.herokuapp.com';
     }
 
     const { socket, online } = useSocket(urlSocket);
