@@ -7,7 +7,7 @@ export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
 
-    const { socket, online } = useSocket('http://localhost:3009');
+    const { socket, online } = useSocket('https://ticketclient.netlify.app/');
     
     return (
         <SocketContext.Provider value={{ socket, online }}>
